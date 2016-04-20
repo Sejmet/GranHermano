@@ -17,6 +17,8 @@
 		D6C33EF11CC7388B000B8449 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C33EF01CC7388B000B8449 /* ApiManager.swift */; };
 		D6C33EF31CC73E53000B8449 /* PostObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C33EF21CC73E53000B8449 /* PostObject.swift */; };
 		D6C33EF51CC73F17000B8449 /* PostsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C33EF41CC73F17000B8449 /* PostsListVC.swift */; };
+		D6E3A0641CC7DFB2007472F6 /* ImagesPostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3A0631CC7DFB2007472F6 /* ImagesPostTVC.swift */; };
+		D6E3A0661CC7DFBC007472F6 /* VideoPostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3A0651CC7DFBC007472F6 /* VideoPostTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		D6C33EF01CC7388B000B8449 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		D6C33EF21CC73E53000B8449 /* PostObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostObject.swift; sourceTree = "<group>"; };
 		D6C33EF41CC73F17000B8449 /* PostsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListVC.swift; sourceTree = "<group>"; };
+		D6E3A0631CC7DFB2007472F6 /* ImagesPostTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesPostTVC.swift; sourceTree = "<group>"; };
+		D6E3A0651CC7DFBC007472F6 /* VideoPostTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPostTVC.swift; sourceTree = "<group>"; };
 		E581023577388B6FFB8232FC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,8 @@
 				D67FE9791CC72A0A00410758 /* AppDelegate.swift */,
 				D67FE97D1CC72A0A00410758 /* Main.storyboard */,
 				D6C33EF41CC73F17000B8449 /* PostsListVC.swift */,
+				D6E3A0631CC7DFB2007472F6 /* ImagesPostTVC.swift */,
+				D6E3A0651CC7DFBC007472F6 /* VideoPostTVC.swift */,
 				D67FE9801CC72A0A00410758 /* Assets.xcassets */,
 				D67FE9821CC72A0A00410758 /* LaunchScreen.storyboard */,
 				D67FE9851CC72A0A00410758 /* Info.plist */,
@@ -228,6 +234,8 @@
 				D67FE97A1CC72A0A00410758 /* AppDelegate.swift in Sources */,
 				D6C33EF51CC73F17000B8449 /* PostsListVC.swift in Sources */,
 				D6C33EF31CC73E53000B8449 /* PostObject.swift in Sources */,
+				D6E3A0661CC7DFBC007472F6 /* VideoPostTVC.swift in Sources */,
+				D6E3A0641CC7DFB2007472F6 /* ImagesPostTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

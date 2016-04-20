@@ -41,15 +41,105 @@
                                     <segment title="Videos"/>
                                 </segments>
                             </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l9m-ZS-dDP">
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="155" id="TFd-p7-Yvg" customClass="ImagesPostTVC" customModule="GranHermano" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="155"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TFd-p7-Yvg" id="Eja-nX-1KP">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="154.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fa-RH-w3x" userLabel="ImageTitle">
+                                                    <rect key="frame" x="139" y="20" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fib-vR-uQb" userLabel="Image">
+                                                    <rect key="frame" x="40" y="49" width="240" height="85.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fib-vR-uQb" firstAttribute="top" secondItem="4Fa-RH-w3x" secondAttribute="bottom" constant="8" symbolic="YES" id="35t-BR-nGO"/>
+                                                <constraint firstItem="fib-vR-uQb" firstAttribute="leading" secondItem="Eja-nX-1KP" secondAttribute="leading" constant="40" id="47J-GB-fmg"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Fa-RH-w3x" secondAttribute="trailing" constant="20" symbolic="YES" id="FI8-nE-IVK"/>
+                                                <constraint firstItem="4Fa-RH-w3x" firstAttribute="top" secondItem="Eja-nX-1KP" secondAttribute="top" constant="20" symbolic="YES" id="S6q-EK-Ref"/>
+                                                <constraint firstItem="4Fa-RH-w3x" firstAttribute="centerX" secondItem="Eja-nX-1KP" secondAttribute="centerX" id="VFx-PA-zJE"/>
+                                                <constraint firstAttribute="bottom" secondItem="fib-vR-uQb" secondAttribute="bottom" constant="20" symbolic="YES" id="Zoe-IZ-QxM"/>
+                                                <constraint firstAttribute="trailing" secondItem="fib-vR-uQb" secondAttribute="trailing" constant="40" id="eU1-oX-8NM"/>
+                                                <constraint firstItem="4Fa-RH-w3x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Eja-nX-1KP" secondAttribute="leading" constant="20" symbolic="YES" id="kRe-va-R9y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageTitleLabel" destination="4Fa-RH-w3x" id="iV3-tU-2qi"/>
+                                            <outlet property="postImageView" destination="fib-vR-uQb" id="a0c-n1-m8a"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="213" id="gvc-LI-nVa" customClass="VideoPostTVC" customModule="GranHermano" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="183" width="320" height="213"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gvc-LI-nVa" id="69u-qD-BJ8">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="212.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaP-5t-rS1" userLabel="videoTitle">
+                                                    <rect key="frame" x="139" y="20" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ofg-KS-ErV" userLabel="video">
+                                                    <rect key="frame" x="40" y="49" width="240" height="114.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrG-44-PhQ" userLabel="videoDescription">
+                                                    <rect key="frame" x="139" y="171.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HaP-5t-rS1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="69u-qD-BJ8" secondAttribute="leading" constant="20" symbolic="YES" id="H1s-8R-k22"/>
+                                                <constraint firstItem="SrG-44-PhQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="69u-qD-BJ8" secondAttribute="leading" constant="20" symbolic="YES" id="LaX-d6-ym9"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SrG-44-PhQ" secondAttribute="trailing" constant="20" symbolic="YES" id="NlE-ot-y8R"/>
+                                                <constraint firstItem="SrG-44-PhQ" firstAttribute="centerX" secondItem="69u-qD-BJ8" secondAttribute="centerX" id="Vgt-SP-5mY"/>
+                                                <constraint firstItem="HaP-5t-rS1" firstAttribute="top" secondItem="69u-qD-BJ8" secondAttribute="top" constant="20" symbolic="YES" id="Wb1-XE-yma"/>
+                                                <constraint firstAttribute="trailing" secondItem="ofg-KS-ErV" secondAttribute="trailing" constant="40" id="ZHr-SX-38l"/>
+                                                <constraint firstItem="ofg-KS-ErV" firstAttribute="top" secondItem="HaP-5t-rS1" secondAttribute="bottom" constant="8" symbolic="YES" id="l1C-b9-uzC"/>
+                                                <constraint firstItem="HaP-5t-rS1" firstAttribute="centerX" secondItem="69u-qD-BJ8" secondAttribute="centerX" id="lVa-rv-cT4"/>
+                                                <constraint firstItem="ofg-KS-ErV" firstAttribute="leading" secondItem="69u-qD-BJ8" secondAttribute="leading" constant="40" id="qil-VO-cL2"/>
+                                                <constraint firstAttribute="bottom" secondItem="SrG-44-PhQ" secondAttribute="bottom" constant="20" symbolic="YES" id="tPe-ft-fv1"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HaP-5t-rS1" secondAttribute="trailing" constant="20" symbolic="YES" id="xgh-MY-hKO"/>
+                                                <constraint firstItem="SrG-44-PhQ" firstAttribute="top" secondItem="ofg-KS-ErV" secondAttribute="bottom" constant="8" symbolic="YES" id="zXP-EZ-GD5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ymh-Xg-b4V" id="5wQ-BB-1sH"/>
+                                    <outlet property="delegate" destination="ymh-Xg-b4V" id="kq6-dD-ecy"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="l9m-ZS-dDP" secondAttribute="trailing" id="A62-vm-0oq"/>
+                            <constraint firstItem="l9m-ZS-dDP" firstAttribute="top" secondItem="xFb-g7-Bek" secondAttribute="bottom" constant="8" symbolic="YES" id="AWJ-6M-XWQ"/>
+                            <constraint firstItem="l9m-ZS-dDP" firstAttribute="leading" secondItem="aMk-0u-nbV" secondAttribute="leading" id="HgP-fx-l4p"/>
                             <constraint firstItem="xFb-g7-Bek" firstAttribute="top" secondItem="G6Q-cF-Z4z" secondAttribute="bottom" constant="8" symbolic="YES" id="Llq-q2-TWP"/>
                             <constraint firstItem="xFb-g7-Bek" firstAttribute="leading" secondItem="aMk-0u-nbV" secondAttribute="leading" constant="20" symbolic="YES" id="RuD-jd-sEB"/>
+                            <constraint firstItem="DIa-58-w7g" firstAttribute="top" secondItem="l9m-ZS-dDP" secondAttribute="bottom" id="g4E-nR-6qm"/>
                             <constraint firstAttribute="trailing" secondItem="xFb-g7-Bek" secondAttribute="trailing" constant="20" symbolic="YES" id="zgc-Sg-xE5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F5l-xO-Ggl"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="xFb-g7-Bek" id="1LB-Fy-Gzt"/>
+                        <outlet property="tableView" destination="l9m-ZS-dDP" id="E3a-xZ-IV8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAR-m2-9eL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
