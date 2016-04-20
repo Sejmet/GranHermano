@@ -89,12 +89,12 @@
 			children = (
 				D67FE9791CC72A0A00410758 /* AppDelegate.swift */,
 				D67FE97D1CC72A0A00410758 /* Main.storyboard */,
+				D6C33EF41CC73F17000B8449 /* PostsListVC.swift */,
 				D67FE9801CC72A0A00410758 /* Assets.xcassets */,
 				D67FE9821CC72A0A00410758 /* LaunchScreen.storyboard */,
 				D67FE9851CC72A0A00410758 /* Info.plist */,
 				D6C33EF01CC7388B000B8449 /* ApiManager.swift */,
 				D6C33EF21CC73E53000B8449 /* PostObject.swift */,
-				D6C33EF41CC73F17000B8449 /* PostsListVC.swift */,
 				D63BCF2B1CC745D0005882A6 /* HistoryObject.swift */,
 			);
 			path = GranHermano;

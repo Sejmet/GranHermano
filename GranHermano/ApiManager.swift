@@ -15,7 +15,7 @@ class ApiManager: NSObject {
     static let sharedInstance = ApiManager()
     
     // With Alamofire
-    func fetchAllPaymentMethodsWith(url: String, completion: ([PostObject]) -> Void) {
+    func fetchAllPostsWith(url: String, completion: ([PostObject], [PostObject]) -> Void) {
         
         Alamofire.request(.GET, url).validate().responseJSON { response in
             switch response.result {
@@ -25,15 +25,23 @@ class ApiManager: NSObject {
                     
                     let jsonDictionary = json.dictionaryValue
                     var history = jsonDictionary["history"]
-                    var postsArray = [PostObject]()
+                    var videoPostsArray = [PostObject]()
+                    var imagePostsArray = [PostObject]()
                     
                     var i = 0
                     for _ in history! {
-                        postsArray.append(PostObject(json:history![i]))
+                        let post = PostObject(json:history![i])
+                        
+                        if (post.event == "sh_media") {
+                            videoPostsArray.append(post)
+                        } else {
+                            imagePostsArray.append(post)
+                        }
+                        
                         i += 1
                     }
                     
-                    completion(postsArray)
+                    completion(videoPostsArray, imagePostsArray)
                     
                 }
             case .Failure(let error):

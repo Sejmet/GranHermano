@@ -32,7 +32,22 @@
                     <view key="view" contentMode="scaleToFill" id="aMk-0u-nbV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xFb-g7-Bek">
+                                <rect key="frame" x="20" y="72" width="280" height="29"/>
+                                <segments>
+                                    <segment title="All"/>
+                                    <segment title="Images"/>
+                                    <segment title="Videos"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xFb-g7-Bek" firstAttribute="top" secondItem="G6Q-cF-Z4z" secondAttribute="bottom" constant="8" symbolic="YES" id="Llq-q2-TWP"/>
+                            <constraint firstItem="xFb-g7-Bek" firstAttribute="leading" secondItem="aMk-0u-nbV" secondAttribute="leading" constant="20" symbolic="YES" id="RuD-jd-sEB"/>
+                            <constraint firstAttribute="trailing" secondItem="xFb-g7-Bek" secondAttribute="trailing" constant="20" symbolic="YES" id="zgc-Sg-xE5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F5l-xO-Ggl"/>
                 </viewController>

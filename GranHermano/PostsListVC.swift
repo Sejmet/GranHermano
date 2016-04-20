@@ -15,7 +15,7 @@ class PostsListVC: UIViewController {
 
         let url = "https://api.iamat.com/atcode/granhermano2015/history/till/now/100?type=sh_img,sh_media"
         
-        ApiManager.sharedInstance.fetchAllPaymentMethodsWith(url) { (paymentMethods: [PostObject]) in
+        ApiManager.sharedInstance.fetchAllPostsWith(url) { (videoPostsArray: [PostObject], imagesPostsArray: [PostObject]) in
             
             
         }
