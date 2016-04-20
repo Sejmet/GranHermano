@@ -40,6 +40,9 @@
                                     <segment title="Images"/>
                                     <segment title="Videos"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="ymh-Xg-b4V" eventType="valueChanged" id="WYb-tV-Jtf"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l9m-ZS-dDP">
                                 <rect key="frame" x="0.0" y="108" width="320" height="460"/>
