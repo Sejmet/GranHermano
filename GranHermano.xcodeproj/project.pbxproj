@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D67FE97A1CC72A0A00410758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67FE9791CC72A0A00410758 /* AppDelegate.swift */; };
+		D67FE97C1CC72A0A00410758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67FE97B1CC72A0A00410758 /* ViewController.swift */; };
+		D67FE97F1CC72A0A00410758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67FE97D1CC72A0A00410758 /* Main.storyboard */; };
+		D67FE9811CC72A0A00410758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67FE9801CC72A0A00410758 /* Assets.xcassets */; };
+		D67FE9841CC72A0A00410758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67FE9821CC72A0A00410758 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D67FE9761CC72A0A00410758 /* GranHermano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GranHermano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67FE9791CC72A0A00410758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D67FE97B1CC72A0A00410758 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D67FE97E1CC72A0A00410758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D67FE9801CC72A0A00410758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D67FE9831CC72A0A00410758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D67FE9851CC72A0A00410758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D67FE9731CC72A0A00410758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D67FE96D1CC72A0A00410758 = {
+			isa = PBXGroup;
+			children = (
+				D67FE9781CC72A0A00410758 /* GranHermano */,
+				D67FE9771CC72A0A00410758 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D67FE9771CC72A0A00410758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D67FE9761CC72A0A00410758 /* GranHermano.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D67FE9781CC72A0A00410758 /* GranHermano */ = {
+			isa = PBXGroup;
+			children = (
+				D67FE9791CC72A0A00410758 /* AppDelegate.swift */,
+				D67FE97B1CC72A0A00410758 /* ViewController.swift */,
+				D67FE97D1CC72A0A00410758 /* Main.storyboard */,
+				D67FE9801CC72A0A00410758 /* Assets.xcassets */,
+				D67FE9821CC72A0A00410758 /* LaunchScreen.storyboard */,
+				D67FE9851CC72A0A00410758 /* Info.plist */,
+			);
+			path = GranHermano;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D67FE9751CC72A0A00410758 /* GranHermano */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67FE9881CC72A0A00410758 /* Build configuration list for PBXNativeTarget "GranHermano" */;
+			buildPhases = (
+				D67FE9721CC72A0A00410758 /* Sources */,
+				D67FE9731CC72A0A00410758 /* Frameworks */,
+				D67FE9741CC72A0A00410758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GranHermano;
+			productName = GranHermano;
+			productReference = D67FE9761CC72A0A00410758 /* GranHermano.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D67FE96E1CC72A0A00410758 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Maria Belen Marañon";
+				TargetAttributes = {
+					D67FE9751CC72A0A00410758 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = D67FE9711CC72A0A00410758 /* Build configuration list for PBXProject "GranHermano" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D67FE96D1CC72A0A00410758;
+			productRefGroup = D67FE9771CC72A0A00410758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D67FE9751CC72A0A00410758 /* GranHermano */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D67FE9741CC72A0A00410758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67FE9841CC72A0A00410758 /* LaunchScreen.storyboard in Resources */,
+				D67FE9811CC72A0A00410758 /* Assets.xcassets in Resources */,
+				D67FE97F1CC72A0A00410758 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D67FE9721CC72A0A00410758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67FE97C1CC72A0A00410758 /* ViewController.swift in Sources */,
+				D67FE97A1CC72A0A00410758 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D67FE97D1CC72A0A00410758 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67FE97E1CC72A0A00410758 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D67FE9821CC72A0A00410758 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67FE9831CC72A0A00410758 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D67FE9861CC72A0A00410758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D67FE9871CC72A0A00410758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D67FE9891CC72A0A00410758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GranHermano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = belen.GranHermano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D67FE98A1CC72A0A00410758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GranHermano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = belen.GranHermano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D67FE9711CC72A0A00410758 /* Build configuration list for PBXProject "GranHermano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67FE9861CC72A0A00410758 /* Debug */,
+				D67FE9871CC72A0A00410758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D67FE9881CC72A0A00410758 /* Build configuration list for PBXNativeTarget "GranHermano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67FE9891CC72A0A00410758 /* Debug */,
+				D67FE98A1CC72A0A00410758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D67FE96E1CC72A0A00410758 /* Project object */;
+}
