@@ -40,29 +40,43 @@ class PostsListVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return self.postsArray.count
-//        switch self.segmentedControl.selectedSegmentIndex {
-//        case 0:
-//            return self.imagesArray.count + self.videosArray.count
-//        case 1:
-//            return self.imagesArray.count
-//        case 2:
-//            return self.videosArray.count
-//        default:
-//            return 0
-//        }
+        switch self.segmentedControl.selectedSegmentIndex {
+        case 0:
+            return self.postsArray.count
+        case 1:
+            return self.imagesArray.count
+        case 2:
+            return self.videosArray.count
+        default:
+            return 0
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("imageCell", forIndexPath:indexPath) as! ImagesPostTVC
+        switch self.segmentedControl.selectedSegmentIndex {
+        default:
         
         let post = self.postsArray[indexPath.row]
+        if (post.event == "sh_img") {
+            let cell = tableView.dequeueReusableCellWithIdentifier("imageCell", forIndexPath:indexPath) as! ImagesPostTVC
+            
+            cell.imageTitleLabel.text = post.data.objectForKey("text")! as? String
+            
+            return cell
+            
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("videoCell", forIndexPath:indexPath) as! VideoPostTVC
+            
+            let dataInformation = post.data.objectForKey("data")
+            let snippet = dataInformation?.objectForKey("snippet")
+            cell.videoTitleLabel.text = snippet?.objectForKey("title")! as? String
+            cell.videoDescriptionLabel.text = snippet?.objectForKey("description")! as? String
+            
+            return cell
+        }
         
-        print(post.data.objectForKey("text")!)
-        cell.imageTitleLabel.text = post.data.objectForKey("text")! as? String
         
-        return cell
+        }
     }
 
 }
