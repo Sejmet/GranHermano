@@ -62,37 +62,14 @@ class PostsListVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             if (post.event == "sh_img") {
                 let cell = tableView.dequeueReusableCellWithIdentifier("imageCell", forIndexPath:indexPath) as! ImagesPostTVC
                 
-                cell.imageTitleLabel.text = post.data.objectForKey("text")! as? String
-                cell.postImageView.image = nil
-                
-                if let base = post.data.objectForKey("base") {
-                    let formats = base.objectForKey("formats")
-                    let baseURL = (base.objectForKey("basePath")! as! String) + (base.objectForKey("filename")! as! String) + "."
-                    let urlString = baseURL + (formats![0] as! String) + "." + (base.objectForKey("ext")! as! String)
-                    
-                    let url = NSURL(string: urlString)
-                    cell.postImageView.hnk_setImageFromURL(url!)
-                }
+                self.imageCellData(cell, post: post)
                 
                 return cell
                 
             } else {
                 let cell = tableView.dequeueReusableCellWithIdentifier("videoCell", forIndexPath:indexPath) as! VideoPostTVC
                 
-                let dataInformation = post.data.objectForKey("data")
-                let snippet = dataInformation?.objectForKey("snippet")
-                cell.videoTitleLabel.text = snippet?.objectForKey("title")! as? String
-                cell.videoDescriptionLabel.text = snippet?.objectForKey("description")! as? String
-                
-                cell.videoImageView.image = nil
-                
-                if let thumbnails = snippet?.objectForKey("thumbnails") {
-                    let defaultThumbnail = thumbnails.objectForKey("default")
-                    let urlString = defaultThumbnail?.objectForKey("url") as! String
-                    
-                    let url = NSURL(string: urlString)
-                    cell.videoImageView.hnk_setImageFromURL(url!)
-                }
+                self.videoCellData(cell, post: post)
                 
                 return cell
             }
@@ -100,41 +77,50 @@ class PostsListVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         case 1:
             let post = self.imagesArray[indexPath.row]
             let cell = tableView.dequeueReusableCellWithIdentifier("imageCell", forIndexPath:indexPath) as! ImagesPostTVC
-            cell.imageTitleLabel.text = post.data.objectForKey("text")! as? String
             
-            cell.postImageView.image = nil
-            
-            if let base = post.data.objectForKey("base") {
-                let formats = base.objectForKey("formats")
-                let baseURL = (base.objectForKey("basePath")! as! String) + (base.objectForKey("filename")! as! String) + "."
-                let urlString = baseURL + (formats![0] as! String) + "." + (base.objectForKey("ext")! as! String)
-                
-                let url = NSURL(string: urlString)
-                cell.postImageView.hnk_setImageFromURL(url!)
-            }
+            self.imageCellData(cell, post: post)
             
             return cell
         default:
             let post = self.videosArray[indexPath.row]
             let cell = tableView.dequeueReusableCellWithIdentifier("videoCell", forIndexPath:indexPath) as! VideoPostTVC
             
-            let dataInformation = post.data.objectForKey("data")
-            let snippet = dataInformation?.objectForKey("snippet")
-
-            cell.videoTitleLabel.text = snippet?.objectForKey("title")! as? String
-            cell.videoDescriptionLabel.text = snippet?.objectForKey("description")! as? String
-            
-            cell.videoImageView.image = nil
-            
-            if let thumbnails = snippet?.objectForKey("thumbnails") {
-                let defaultThumbnail = thumbnails.objectForKey("default")
-                let urlString = defaultThumbnail?.objectForKey("url") as! String
-                
-                let url = NSURL(string: urlString)
-                cell.videoImageView.hnk_setImageFromURL(url!)    
-            }
+            self.videoCellData(cell, post: post)
             
             return cell
+        }
+    }
+    
+    func videoCellData(cell:VideoPostTVC, post: PostObject) {
+        let dataInformation = post.data.objectForKey("data")
+        let snippet = dataInformation?.objectForKey("snippet")
+        
+        cell.videoTitleLabel.text = snippet?.objectForKey("title")! as? String
+        cell.videoDescriptionLabel.text = snippet?.objectForKey("description")! as? String
+        
+        cell.videoImageView.image = nil
+        
+        if let thumbnails = snippet?.objectForKey("thumbnails") {
+            let defaultThumbnail = thumbnails.objectForKey("default")
+            let urlString = defaultThumbnail?.objectForKey("url") as! String
+            
+            let url = NSURL(string: urlString)
+            cell.videoImageView.hnk_setImageFromURL(url!)
+        }
+    }
+    
+    func imageCellData(cell:ImagesPostTVC, post:PostObject) {
+        cell.imageTitleLabel.text = post.data.objectForKey("text")! as? String
+        
+        cell.postImageView.image = nil
+        
+        if let base = post.data.objectForKey("base") {
+            let formats = base.objectForKey("formats")
+            let baseURL = (base.objectForKey("basePath")! as! String) + (base.objectForKey("filename")! as! String) + "."
+            let urlString = baseURL + (formats![0] as! String) + "." + (base.objectForKey("ext")! as! String)
+            
+            let url = NSURL(string: urlString)
+            cell.postImageView.hnk_setImageFromURL(url!)
         }
     }
 }
