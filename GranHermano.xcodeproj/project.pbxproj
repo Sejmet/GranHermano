@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		540198108895143498802B46 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E581023577388B6FFB8232FC /* Pods.framework */; };
-		D63BCF2C1CC745D0005882A6 /* HistoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BCF2B1CC745D0005882A6 /* HistoryObject.swift */; };
 		D67FE97A1CC72A0A00410758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67FE9791CC72A0A00410758 /* AppDelegate.swift */; };
 		D67FE97F1CC72A0A00410758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67FE97D1CC72A0A00410758 /* Main.storyboard */; };
 		D67FE9811CC72A0A00410758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67FE9801CC72A0A00410758 /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 /* Begin PBXFileReference section */
 		693252BFAFE01D3FE1ADDA5D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		778786C140C66492D0195482 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		D63BCF2B1CC745D0005882A6 /* HistoryObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryObject.swift; sourceTree = "<group>"; };
 		D67FE9761CC72A0A00410758 /* GranHermano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GranHermano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67FE9791CC72A0A00410758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D67FE97E1CC72A0A00410758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				D67FE9851CC72A0A00410758 /* Info.plist */,
 				D6C33EF01CC7388B000B8449 /* ApiManager.swift */,
 				D6C33EF21CC73E53000B8449 /* PostObject.swift */,
-				D63BCF2B1CC745D0005882A6 /* HistoryObject.swift */,
 			);
 			path = GranHermano;
 			sourceTree = "<group>";
@@ -230,7 +227,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6C33EF11CC7388B000B8449 /* ApiManager.swift in Sources */,
-				D63BCF2C1CC745D0005882A6 /* HistoryObject.swift in Sources */,
 				D67FE97A1CC72A0A00410758 /* AppDelegate.swift in Sources */,
 				D6C33EF51CC73F17000B8449 /* PostsListVC.swift in Sources */,
 				D6C33EF31CC73E53000B8449 /* PostObject.swift in Sources */,

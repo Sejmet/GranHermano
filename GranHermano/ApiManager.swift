@@ -14,7 +14,6 @@ class ApiManager: NSObject {
 
     static let sharedInstance = ApiManager()
     
-    // With Alamofire
     func fetchAllPostsWith(url: String, completion: ([PostObject]) -> Void) {
         
         Alamofire.request(.GET, url).validate().responseJSON { response in
