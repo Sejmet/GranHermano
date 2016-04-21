@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Haneke
 
 class PostsListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -62,6 +63,16 @@ class PostsListVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                 let cell = tableView.dequeueReusableCellWithIdentifier("imageCell", forIndexPath:indexPath) as! ImagesPostTVC
                 
                 cell.imageTitleLabel.text = post.data.objectForKey("text")! as? String
+                
+                if let base = post.data.objectForKey("base") {
+                    let formats = base.objectForKey("formats")
+                    let baseURL = (base.objectForKey("basePath")! as! String) + (base.objectForKey("filename")! as! String) + "."
+                    let urlString = baseURL + (formats![0] as! String) + "." + (base.objectForKey("ext")! as! String)
+                    print(urlString)
+                    
+                    let url = NSURL(string: urlString)
+                    cell.postImageView.hnk_setImageFromURL(url!)
+                }
                 
                 return cell
                 

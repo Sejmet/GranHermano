@@ -48,31 +48,34 @@
                                 <rect key="frame" x="0.0" y="108" width="320" height="460"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="155" id="TFd-p7-Yvg" customClass="ImagesPostTVC" customModule="GranHermano" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="155"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="171" id="TFd-p7-Yvg" customClass="ImagesPostTVC" customModule="GranHermano" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="171"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TFd-p7-Yvg" id="Eja-nX-1KP">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="154.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="170.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fa-RH-w3x" userLabel="ImageTitle">
-                                                    <rect key="frame" x="139" y="20" width="42" height="21"/>
+                                                    <rect key="frame" x="139" y="20" width="42" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fib-vR-uQb" userLabel="Image">
-                                                    <rect key="frame" x="40" y="49" width="240" height="85.5"/>
+                                                    <rect key="frame" x="110" y="50.5" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="7HD-VD-Qyd"/>
+                                                        <constraint firstAttribute="height" constant="100" id="e9H-jw-EGr"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="fib-vR-uQb" firstAttribute="top" secondItem="4Fa-RH-w3x" secondAttribute="bottom" constant="8" symbolic="YES" id="35t-BR-nGO"/>
-                                                <constraint firstItem="fib-vR-uQb" firstAttribute="leading" secondItem="Eja-nX-1KP" secondAttribute="leading" constant="40" id="47J-GB-fmg"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Fa-RH-w3x" secondAttribute="trailing" constant="20" symbolic="YES" id="FI8-nE-IVK"/>
                                                 <constraint firstItem="4Fa-RH-w3x" firstAttribute="top" secondItem="Eja-nX-1KP" secondAttribute="top" constant="20" symbolic="YES" id="S6q-EK-Ref"/>
+                                                <constraint firstItem="fib-vR-uQb" firstAttribute="centerX" secondItem="Eja-nX-1KP" secondAttribute="centerX" id="UEB-TZ-GJW"/>
                                                 <constraint firstItem="4Fa-RH-w3x" firstAttribute="centerX" secondItem="Eja-nX-1KP" secondAttribute="centerX" id="VFx-PA-zJE"/>
                                                 <constraint firstAttribute="bottom" secondItem="fib-vR-uQb" secondAttribute="bottom" constant="20" symbolic="YES" id="Zoe-IZ-QxM"/>
-                                                <constraint firstAttribute="trailing" secondItem="fib-vR-uQb" secondAttribute="trailing" constant="40" id="eU1-oX-8NM"/>
                                                 <constraint firstItem="4Fa-RH-w3x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Eja-nX-1KP" secondAttribute="leading" constant="20" symbolic="YES" id="kRe-va-R9y"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -81,11 +84,11 @@
                                             <outlet property="postImageView" destination="fib-vR-uQb" id="a0c-n1-m8a"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="213" id="gvc-LI-nVa" customClass="VideoPostTVC" customModule="GranHermano" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="183" width="320" height="213"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="197" id="gvc-LI-nVa" customClass="VideoPostTVC" customModule="GranHermano" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="199" width="320" height="197"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gvc-LI-nVa" id="69u-qD-BJ8">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="212.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="196.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaP-5t-rS1" userLabel="videoTitle">
@@ -95,10 +98,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ofg-KS-ErV" userLabel="video">
-                                                    <rect key="frame" x="40" y="49" width="240" height="114.5"/>
+                                                    <rect key="frame" x="110" y="49" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="LoJ-YX-Enn"/>
+                                                        <constraint firstAttribute="width" constant="100" id="i6I-sW-dAt"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrG-44-PhQ" userLabel="videoDescription">
-                                                    <rect key="frame" x="139" y="171.5" width="42" height="21"/>
+                                                    <rect key="frame" x="139" y="157" width="42" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -110,11 +117,10 @@
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SrG-44-PhQ" secondAttribute="trailing" constant="20" symbolic="YES" id="NlE-ot-y8R"/>
                                                 <constraint firstItem="SrG-44-PhQ" firstAttribute="centerX" secondItem="69u-qD-BJ8" secondAttribute="centerX" id="Vgt-SP-5mY"/>
                                                 <constraint firstItem="HaP-5t-rS1" firstAttribute="top" secondItem="69u-qD-BJ8" secondAttribute="top" constant="20" symbolic="YES" id="Wb1-XE-yma"/>
-                                                <constraint firstAttribute="trailing" secondItem="ofg-KS-ErV" secondAttribute="trailing" constant="40" id="ZHr-SX-38l"/>
+                                                <constraint firstItem="ofg-KS-ErV" firstAttribute="centerX" secondItem="69u-qD-BJ8" secondAttribute="centerX" id="kgx-zr-hs1"/>
                                                 <constraint firstItem="ofg-KS-ErV" firstAttribute="top" secondItem="HaP-5t-rS1" secondAttribute="bottom" constant="8" symbolic="YES" id="l1C-b9-uzC"/>
                                                 <constraint firstItem="HaP-5t-rS1" firstAttribute="centerX" secondItem="69u-qD-BJ8" secondAttribute="centerX" id="lVa-rv-cT4"/>
-                                                <constraint firstItem="ofg-KS-ErV" firstAttribute="leading" secondItem="69u-qD-BJ8" secondAttribute="leading" constant="40" id="qil-VO-cL2"/>
-                                                <constraint firstAttribute="bottom" secondItem="SrG-44-PhQ" secondAttribute="bottom" constant="20" symbolic="YES" id="tPe-ft-fv1"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SrG-44-PhQ" secondAttribute="bottom" priority="750" constant="20" symbolic="YES" id="tPe-ft-fv1"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HaP-5t-rS1" secondAttribute="trailing" constant="20" symbolic="YES" id="xgh-MY-hKO"/>
                                                 <constraint firstItem="SrG-44-PhQ" firstAttribute="top" secondItem="ofg-KS-ErV" secondAttribute="bottom" constant="8" symbolic="YES" id="zXP-EZ-GD5"/>
                                             </constraints>
